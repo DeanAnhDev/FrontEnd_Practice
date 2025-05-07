@@ -1,8 +1,15 @@
+import ListPost from '@/views/ListPost.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [],
+  routes: [
+    {
+    path: '/',
+    name: 'Home',
+    component: ListPost,
+  },
+],
 })
 
 export default router

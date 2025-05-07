@@ -2,5 +2,18 @@
 
 :root {
   --font-family: 'Montserrat', sans-serif;
+  --font-header: 'MuseoModerno', sans-serif;
   --text-primary-black: black;
+}
+
+
+.text-primary-black {
+  color: var(--text-primary-black);
+}
+.font-custom {
+  font-family: var(--font-family);
+}
+
+.font-header-custom {
+  font-family: var(--font-header);
 }
