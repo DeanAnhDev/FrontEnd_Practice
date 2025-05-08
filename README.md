@@ -15,16 +15,18 @@ Vuejs3, Html5, TailwindCss
 
 #Hướng dẫn sử dụng:
 1. Cài đặt Node.js:
+   
 node -v
-
 npm -v
 
 3. Tải mã nguồn và cài đặt thư viện:
+
 cd review-nha
 
 npm install
 
 5. Chạy project
+   
 npm run dev
 
 #Kết quả xem khi chạy project hoặc tại đường link: 
