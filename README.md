@@ -4,7 +4,7 @@ Bài 1: Cắt giao diện PSD Blog Review Nhà
 Thực hiện bởi: Đinh Thế Anh
 Figma/PSD/Template: https://www.figma.com/file/OqoskP3WsOjZYsIaXsqdm0/ReviewNha
 
-Github page: https://github.com/DeanAnhDev/frontend_practice)
+Github page: https://github.com/DeanAnhDev/frontend_practice
 
 #Resposive: 
 375px, 768px, 1024px, màn hình PC
