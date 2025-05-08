@@ -9,7 +9,7 @@ Github page: https://github.com/DeanAnhDev/frontend_practice
 #Resposive: 
 375px, 768px, 1024px, màn hình PC
 
-#Các plugins, libraries đã sử dụng:
+#Các plugins, libraries, framework đã sử dụng:
 
 Vuejs3, Html5, TailwindCss 
 
