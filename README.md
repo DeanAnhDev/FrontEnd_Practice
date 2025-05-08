@@ -14,7 +14,7 @@ Github page: https://github.com/DeanAnhDev/frontend_practice
 Vuejs3, Html5, TailwindCss 
 
 #Hướng dẫn sử dụng:
-1. Cài đặt Node.js:
+1. Cài đặt Node.js: Nếu chưa có, tải tại: https://nodejs.org (chọn phiên bản LTS)
    
 node -v
 
