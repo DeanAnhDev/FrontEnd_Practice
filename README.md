@@ -3,7 +3,7 @@ Bài 1: Cắt giao diện PSD Blog Review Nhà
 Đề bài yêu cầu cắt lại giao diện blog của trang Review nhà với figma
 Thực hiện bởi: Đinh Thế Anh
 Figma/PSD/Template: https://www.figma.com/file/OqoskP3WsOjZYsIaXsqdm0/ReviewNha
-Github page: [...](https://github.com/DeanAnhDev/frontend_practice)
+Github page: https://github.com/DeanAnhDev/frontend_practice)
 
 #Resposive: 
 375px, 768px, 1024px, màn hình PC
@@ -20,4 +20,5 @@ cd review-nha
 npm install
 3. Chạy project
 npm run dev
+
 #Kết quả xem khi chạy project hoặc tại đường link: 
