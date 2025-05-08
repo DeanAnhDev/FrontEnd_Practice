@@ -30,4 +30,4 @@ npm install
    
 npm run dev
 
-#Kết quả xem khi chạy project hoặc tại đường link: 
+#Kết quả xem khi chạy project hoặc tại đường link: https://deananhdev.github.io/preview/#/
