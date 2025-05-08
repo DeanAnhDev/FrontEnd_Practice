@@ -4,7 +4,7 @@
     <Header />
 
     <!-- Main Content -->
-    <main>
+    <main class="pt-30">
       <router-view />
     </main>
     <!-- Footer -->

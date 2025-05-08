@@ -6,302 +6,269 @@ import PlayVideoIcon from '@/components/icons/PlayVideoIcon.vue'
 </script>
 
 <template>
-  <div>
-    <section>
+  <div class="mx-auto">
+    <section class=" mx-auto">
       <img
         class="w-[90%] block mx-auto object-cover"
         src="../assets/img/banner/banner.png"
         alt="Banner quảng cáo"
       />
-      <div class="flex overflow-x-auto w-[90%] mx-auto my-6 font-custom">
+      <div class="flex overflow-x-auto w-[90%] mx-auto my-6 font-custom xl:w-[1024px]">
         <div
           class="text-sm/[21px] font-semibold shrink-0 px-9 py-2 border border-2 border-[#007882] rounded-full text-[#fff] bg-[#007882]"
         >
           Tất cả
         </div>
-        <div class="text-sm/[21px] font-semibold shrink-0 px-9 py-2">Xã hội</div>
-        <div class="text-sm/[21px] font-semibold shrink-0 px-9 py-2">Nhà đất</div>
-        <div class="text-sm/[21px] font-semibold shrink-0 px-9 py-2">Đời sống</div>
-        <div class="text-sm/[21px] font-semibold shrink-0 px-9 py-2">Video</div>
+        <div class="text-sm/[21px] font-semibold shrink-0 px-9 py-2 lg:text-lg">Xã hội</div>
+        <div class="text-sm/[21px] font-semibold shrink-0 px-9 py-2 lg:text-lg">Nhà đất</div>
+        <div class="text-sm/[21px] font-semibold shrink-0 px-9 py-2 lg:text-lg">Đời sống</div>
+        <div class="text-sm/[21px] font-semibold shrink-0 px-9 py-2 lg:text-lg">Video</div>
       </div>
     </section>
-    <section>
-      <div class="w-fit mx-auto flex items-center gap-2 font-custom font-bold text-[21px] p-2 mb-4">
+    <!-- list post -->
+    <section id="list-post" class="w-[90%] mx-auto lg:mx-auto xl:w-[1024px]">
+      <div class="w-fit mx-auto flex items-center gap-2 font-custom font-bold text-[21px] p-2 mb-4 lg:text-[32px]">
         <PostIcon />
         <h1>Tin Tức</h1>
       </div>
-      <div>
-        <div class="relative w-[90%] mx-auto mb-4">
-          <img src="../assets/img/post/imagep1.png" alt="" class="w-full h-auto" />
-
+      <div class="grid gap-6 lg:grid-cols-12">
+        <div class="relative w-full mb-4 col-span-12 lg:col-span-8 lg:col-start-1">
+          <img
+            src="../assets/img/post/imagep1.png"
+            alt=""
+            class="w-full h-auto rounded-md object-cover"
+          />
           <div class="absolute top-4 right-4">
             <HeartPostIcon class="w-6 h-6" />
           </div>
           <div>
-            <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2">
+            <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2  lg:text-lg/[27px]">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, debitis quidem.
               Facere, et minus dolorem iste temporibus culpa obcaecati voluptate laudantium,
               consectetur quaerat esse. Nesciunt veniam aspernatur voluptas totam quae?
             </h2>
             <div class="flex items-center gap-2 my-1">
               <h3 class="text-sm/[20px] font-semibold text-[#007882]">Xã hội</h3>
-              <svg
-                width="3"
-                height="4"
-                viewBox="0 0 3 4"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="1.5" cy="1.56641" r="1.5" fill="#3B4144" />
-              </svg>
+              <span class="w-[3px] h-[3px] bg-[#3B4144] rounded-full"></span>
               <p class="text-xs">Quang Anh Trần</p>
-              <svg
-                width="3"
-                height="4"
-                viewBox="0 0 3 4"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="1.5" cy="1.56641" r="1.5" fill="#3B4144" />
-              </svg>
+              <span class="w-[3px] h-[3px] bg-[#3B4144] rounded-full"></span>
               <p class="text-xs">24/02/2020</p>
             </div>
-            <p class="line-clamp-3 text-sm/[21px] text-[#3B4144] font-normal">
+            <p class="line-clamp-3 text-sm/[21px] text-[#3B4144] font-normal lg:text-base/[28px]">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate in eius
               voluptas ea assumenda sequi, voluptatibus molestiae ad quod deserunt est delectus
               nulla, ullam nostrum quis vero perferendis deleniti.
             </p>
           </div>
         </div>
-        <div>
-          <div class="relative w-[90%] mx-auto mb-4">
-            <img src="../assets/img/post/imagep2.png" alt="" class="w-full h-auto" />
 
+        <div class="col-span-12 lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+          <!-- Post 1 -->
+          <div class="relative w-full mb-4">
+            <img
+              src="../assets/img/post/imagep2.png"
+              alt=""
+              class="w-full h-auto rounded-md object-cover"
+            />
             <div class="absolute top-4 right-4">
               <HeartPostIcon class="w-6 h-6" />
             </div>
             <div>
-              <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, debitis quidem.
-                Facere, et minus dolorem iste temporibus culpa obcaecati voluptate laudantium,
-                consectetur quaerat esse. Nesciunt veniam aspernatur voluptas totam quae?
+              <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2 lg:text-lg/[27px]">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, debitis quidem...
               </h2>
               <div class="flex items-center gap-2 my-1">
                 <h3 class="text-sm/[20px] font-semibold text-[#007882]">Xã hội</h3>
-                <svg
-                  width="3"
-                  height="4"
-                  viewBox="0 0 3 4"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="1.5" cy="1.56641" r="1.5" fill="#3B4144" />
-                </svg>
+                <span class="w-[3px] h-[3px] bg-[#3B4144] rounded-full"></span>
                 <p class="text-xs">Quang Anh Trần</p>
-                <svg
-                  width="3"
-                  height="4"
-                  viewBox="0 0 3 4"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="1.5" cy="1.56641" r="1.5" fill="#3B4144" />
-                </svg>
+                <span class="w-[3px] h-[3px] bg-[#3B4144] rounded-full"></span>
                 <p class="text-xs">24/02/2020</p>
               </div>
-              <p class="line-clamp-3 text-sm/[21px] text-[#3B4144] font-normal">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate in eius
-                voluptas ea assumenda sequi, voluptatibus molestiae ad quod deserunt est delectus
-                nulla, ullam nostrum quis vero perferendis deleniti.
+              <p class="line-clamp-3 text-sm/[21px] text-[#3B4144] font-normal lg:hidden">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate in eius...
               </p>
             </div>
           </div>
-          <div class="relative w-[90%] mx-auto mb-4">
-            <img src="../assets/img/post/imagep3.png" alt="" class="w-full h-auto" />
 
+          <div class="relative w-full mb-4">
+            <img
+              src="../assets/img/post/imagep3.png"
+              alt=""
+              class="w-full h-auto rounded-md object-cover"
+            />
             <div class="absolute top-4 right-4">
               <HeartPostIcon class="w-6 h-6" />
             </div>
             <div>
-              <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, debitis quidem.
-                Facere, et minus dolorem iste temporibus culpa obcaecati voluptate laudantium,
-                consectetur quaerat esse. Nesciunt veniam aspernatur voluptas totam quae?
+              <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2  lg:text-lg/[27px]">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, debitis quidem...
               </h2>
               <div class="flex items-center gap-2 my-1">
                 <h3 class="text-sm/[20px] font-semibold text-[#007882]">Xã hội</h3>
-                <svg
-                  width="3"
-                  height="4"
-                  viewBox="0 0 3 4"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="1.5" cy="1.56641" r="1.5" fill="#3B4144" />
-                </svg>
+                <span class="w-[3px] h-[3px] bg-[#3B4144] rounded-full"></span>
                 <p class="text-xs">Quang Anh Trần</p>
-                <svg
-                  width="3"
-                  height="4"
-                  viewBox="0 0 3 4"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="1.5" cy="1.56641" r="1.5" fill="#3B4144" />
-                </svg>
+                <span class="w-[3px] h-[3px] bg-[#3B4144] rounded-full"></span>
                 <p class="text-xs">24/02/2020</p>
               </div>
-              <p class="line-clamp-3 text-sm/[21px] text-[#3B4144] font-normal">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate in eius
-                voluptas ea assumenda sequi, voluptatibus molestiae ad quod deserunt est delectus
-                nulla, ullam nostrum quis vero perferendis deleniti.
+              <p class="line-clamp-3 text-sm/[21px] text-[#3B4144] font-normal lg:hidden">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate in eius...
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section>
+    <!-- video -->
+    <section id="video " class=" lg:mx-auto mx-auto ">
       <div
-        class="flex justify-between items-center font-custom font-semibold text-sm/[21px] mb-4 w-[90%] mx-auto"
+        class="flex justify-between items-center font-custom font-semibold text-sm/[21px] mb-4 w-[90%] mx-auto lg:mt-10  xl:w-[1024px]"
       >
         <h2>Video</h2>
-        <ArrowIcon />
-      </div>
-      <div class="relative w-[90%] mx-auto">
-        <div class="relative w-full mb-4">
-          <img src="../assets/img/post/imagevd1.png" alt="" class="w-full h-auto" />
-          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <PlayVideoIcon class="w-12 h-12 text-white" />
-          </div>
-        </div>
-        <div class="absolute top-4 right-4">
-          <HeartPostIcon class="w-6 h-6" />
-        </div>
-        <div>
-          <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, debitis quidem.
-            Facere, et minus dolorem iste temporibus culpa obcaecati voluptate laudantium,
-            consectetur quaerat esse. Nesciunt veniam aspernatur voluptas totam quae?
-          </h2>
-          <div class="flex items-center gap-2 my-1">
-            <p class="text-xs">5542 lượt xem</p>
-            <svg
-              width="3"
-              height="4"
-              viewBox="0 0 3 4"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="1.5" cy="1.56641" r="1.5" fill="#3B4144" />
-            </svg>
-            <p class="text-xs">24/02/2020</p>
-          </div>
-        </div>
+
+        <p class="font-normal text-gray-500 text-sm hidden md:block">Xem tất cả</p>
+
+        <ArrowIcon class="md:hidden" />
       </div>
 
-      <div class="relative w-[90%] mx-auto flex overflow-x-auto gap-4">
-        <div class="max-w-[75%] shrink-0 relative">
+      <div class="w-[90%] mx-auto flex flex-col lg:flex-row gap-4 items-start xl:w-[1024px]">
+
+
+
+        <!-- Video chính -->
+        <div class="basis-8/12">
+
           <div class="relative w-full mb-4">
-            <img src="../assets/img/post/imagevd2.png" alt="" class="w-full h-auto" />
+            <img src="../assets/img/post/video1.jpg" alt="" class="w-full aspect-[16/9] object-cover rounded-4xl lg:h-[400px] " />
             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <PlayVideoIcon class="w-12 h-12 text-white" />
             </div>
-          </div>
-          <div class="absolute top-4 right-4">
-            <HeartPostIcon class="w-6 h-6" />
-          </div>
-          <div>
-            <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, debitis quidem.
-              Facere, et minus dolorem iste temporibus culpa obcaecati voluptate laudantium,
-              consectetur quaerat esse. Nesciunt veniam aspernatur voluptas totam quae?
+            <div class="absolute top-4 right-4">
+              <HeartPostIcon class="w-6 h-6" />
+            </div>
+
+            <div class="lg:absolute inset-0 bg-gradient-to-t from-[#00000080] to-[#00000000] 	rounded-4xl"></div>
+
+            <div class="lg:absolute bottom-5 left-5 lg:text-[#fff]">
+             
+            <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2 lg:text-[#fff] lg:text-lg/[27px]">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit...
             </h2>
             <div class="flex items-center gap-2 my-1">
-              <p class="text-xs">5542 lượt xem</p>
-              <svg
-                width="3"
-                height="4"
-                viewBox="0 0 3 4"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="1.5" cy="1.56641" r="1.5" fill="#3B4144" />
-              </svg>
-              <p class="text-xs">24/02/2020</p>
+              <p class="text-xs lg:text-sm/[21px]">5542 lượt xem</p>
+              <div class="w-[3px] h-[3px] bg-[#3B4144] rounded-full lg:bg-[#fff]"></div>
+              <p class="text-xs lg:text-sm/[21px] lg:text-[#FFFFFF] lg:font-normal">24/02/2020</p>
+            </div>
+          </div>
+          </div>
+
+          
+        </div>
+
+        <!-- Danh sách video nhỏ -->
+        <div class="flex lg:flex-col basis-4/12 gap-4 h-full overflow-x-auto w-full lg:overflow-y-auto mt-4 lg:mt-0 lg:h-[400px]">
+          
+          <!-- video nhỏ -->
+          <div class="w-[60%] md:w-[30%] lg:w-[95%] shrink-0 relative">
+            <div class="relative w-full mb-2">
+              <img src="../assets/img/post/imagevd2.png" alt="" />
+              <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <PlayVideoIcon class="w-12 h-12 text-white" />
+              </div>
+            </div>
+
+            <HeartPostIcon class="absolute top-4 right-4 sm:hidden" />
+
+            <div>
+              <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2">
+                Lorem ipsum dolor sit, amet consectetur...
+              </h2>
+              <div class="flex items-center gap-2 my-1">
+                <p class="text-xs">5542 lượt xem</p>
+                <div class="w-[3px] h-[3px] bg-[#3B4144] rounded-full"></div>
+                <p class="text-xs">24/02/2020</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-[60%] md:w-[30%] lg:w-[95%] shrink-0 relative">
+            <div class="relative w-full mb-2">
+              <img src="../assets/img/post/imagevd3.png" alt="" class="w-full h-auto" />
+              <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <PlayVideoIcon class="w-12 h-12 text-white" />
+              </div>
+            </div>
+
+            <HeartPostIcon class="absolute top-4 right-4 sm:hidden" />
+
+            <div>
+              <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2">
+                Lorem ipsum dolor sit, amet consectetur...
+              </h2>
+              <div class="flex items-center gap-2 my-1">
+                <p class="text-xs">5542 lượt xem</p>
+                <div class="w-[3px] h-[3px] bg-[#3B4144] rounded-full"></div>
+                <p class="text-xs">24/02/2020</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-[60%] md:w-[30%] lg:w-[95%] shrink-0 relative">
+            <div class="relative w-full mb-2">
+              <img src="../assets/img/post/imagevd1.png" alt="" class="w-full h-auto" />
+              <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <PlayVideoIcon class="w-12 h-12 text-white" />
+              </div>
+            </div>
+
+            <HeartPostIcon class="absolute top-4 right-4 sm:hidden" />
+
+            <div>
+              <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2">
+                Lorem ipsum dolor sit, amet consectetur...
+              </h2>
+              <div class="flex items-center gap-2 my-1">
+                <p class="text-xs">5542 lượt xem</p>
+                <div class="w-[3px] h-[3px] bg-[#3B4144] rounded-full"></div>
+                <p class="text-xs">24/02/2020</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-[60%] md:w-[30%] lg:w-[95%] shrink-0 relative">
+            <div class="relative w-full mb-2">
+              <img src="../assets/img/post/imagevd2.png" alt="" class="w-full h-auto" />
+              <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <PlayVideoIcon class="w-12 h-12 text-white" />
+              </div>
+            </div>
+
+            <HeartPostIcon class="absolute top-4 right-4 sm:hidden" />
+
+            <div>
+              <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2">
+                Lorem ipsum dolor sit, amet consectetur...
+              </h2>
+              <div class="flex items-center gap-2 my-1">
+                <p class="text-xs">5542 lượt xem</p>
+                <div class="w-[3px] h-[3px] bg-[#3B4144] rounded-full"></div>
+                <p class="text-xs">24/02/2020</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="max-w-[75%] shrink-0 relative">
-          <div class="relative w-full mb-4">
-            <img src="../assets/img/post/imagevd3.png" alt="" class="w-full h-auto" />
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <PlayVideoIcon class="w-12 h-12 text-white" />
-            </div>
-          </div>
-          <div class="absolute top-4 right-4">
-            <HeartPostIcon class="w-6 h-6" />
-          </div>
-          <div>
-            <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, debitis quidem.
-              Facere, et minus dolorem iste temporibus culpa obcaecati voluptate laudantium,
-              consectetur quaerat esse. Nesciunt veniam aspernatur voluptas totam quae?
-            </h2>
-            <div class="flex items-center gap-2 my-1">
-              <p class="text-xs">5542 lượt xem</p>
-              <svg
-                width="3"
-                height="4"
-                viewBox="0 0 3 4"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="1.5" cy="1.56641" r="1.5" fill="#3B4144" />
-              </svg>
-              <p class="text-xs">24/02/2020</p>
-            </div>
-          </div>
-        </div>
-        <div class="max-w-[75%] shrink-0 relative">
-          <div class="relative w-full mb-4">
-            <img src="../assets/img/post/imagevd3.png" alt="" class="w-full h-auto" />
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <PlayVideoIcon class="w-12 h-12 text-white" />
-            </div>
-          </div>
-          <div class="absolute top-4 right-4">
-            <HeartPostIcon class="w-6 h-6" />
-          </div>
-          <div>
-            <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, debitis quidem.
-              Facere, et minus dolorem iste temporibus culpa obcaecati voluptate laudantium,
-              consectetur quaerat esse. Nesciunt veniam aspernatur voluptas totam quae?
-            </h2>
-            <div class="flex items-center gap-2 my-1">
-              <p class="text-xs">5542 lượt xem</p>
-              <svg
-                width="3"
-                height="4"
-                viewBox="0 0 3 4"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="1.5" cy="1.56641" r="1.5" fill="#3B4144" />
-              </svg>
-              <p class="text-xs">24/02/2020</p>
-            </div>
-          </div>
-        </div>
+
+
       </div>
     </section>
-    <section>
-      <div class="font-custom font-semibold text-sm/[21px] mb-4 w-[90%] mx-auto mt-6">
+    <!-- danh sách tin -->
+    <section id="news " class="  lg:mx-auto mx-auto">
+      <div class="font-custom font-semibold text-sm/[21px] mb-4 w-[90%] mx-auto mt-6 xl:w-[1024px]">
         <h2>Danh sách tin</h2>
       </div>
-      <div class="w-[90%] mx-auto mb-5">
-        <div>
+      <!-- new 1 -->
+      <div class="w-[90%] mx-auto mb-5 xl:w-[1024px]">
+        <!-- mobile -->
+        <div class="block md:hidden">
           <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, debitis quidem.
             Facere, et minus dolorem iste temporibus culpa obcaecati voluptate laudantium,
@@ -331,23 +298,68 @@ import PlayVideoIcon from '@/components/icons/PlayVideoIcon.vue'
             <p class="text-xs">24/02/2020</p>
           </div>
         </div>
+
+        <!-- desktop -->
         <div class="w-full mb-4">
-          <div class="flex justify-center items-center gap-2 relative">
-            <img src="../assets/img/post/imagenew1.png" alt="" class="w-[50%]" />
-            <div class="absolute bottom-2 left-2">
-              <HeartPostIcon class="w-6 h-6" />
+          <div class="relative grid md:grid-cols-12 gap-4 items-start">
+            <div class="md:col-span-5 lg:col-span-4 relative">
+              <img src="../assets/img/post/imagenew1.png" alt="" class=" md:grid-cols-5" />
+              <div class="absolute bottom-2 left-2">
+                <HeartPostIcon class="w-6 h-6" />
+              </div>
             </div>
-            <p class="line-clamp-4 text-sm/[21px] text-[#3B4144] font-normal">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate in eius
-              voluptas ea assumenda sequi, voluptatibus molestiae ad quod deserunt est delectus
-              nulla, ullam nostrum quis vero perferendis deleniti.
-            </p>
+
+            <!--  -->
+            <div class="md:col-span-7 lg:col-span-8 ml-2">
+              <div class="hidden md:block">
+                <h2 class="line-clamp-2 text-lg/[21px] font-bold text-[#3B4144] mt-2 lg:text-lg/[27px]">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, debitis quidem.
+                  Facere, et minus dolorem iste temporibus culpa obcaecati voluptate laudantium,
+                  consectetur quaerat esse. Nesciunt veniam aspernatur voluptas totam quae?
+                </h2>
+
+                <div class="flex items-center gap-2 my-1">
+                  <h3 class="text-sm/[27px] font-semibold text-[#007882]">Xã hội</h3>
+                  <svg
+                    width="3"
+                    height="4"
+                    viewBox="0 0 3 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="1.5" cy="1.56641" r="1.5" fill="#3B4144" />
+                  </svg>
+                  <p class="text-xs">Quang Anh Trần</p>
+                  <svg
+                    width="3"
+                    height="4"
+                    viewBox="0 0 3 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="1.5" cy="1.56641" r="1.5" fill="#3B4144" />
+                  </svg>
+                  <p class="text-xs">24/02/2020</p>
+                </div>
+              </div>
+              <div>
+                <p class="line-clamp-4 text-sm/[21px] text-[#3B4144] font-normal lg:text-base/[28px]">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate in eius
+                  voluptas ea assumenda sequi, voluptatibus molestiae ad quod deserunt est delectus
+                  nulla, ullam nostrum quis vero perferendis deleniti.
+                </p>
+              </div>
+
+            </div>
+            
           </div>
         </div>
       </div>
-      <div class="w-[90%] mx-auto mb-5">
-        <div>
-          <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2">
+      <!-- new 2 -->
+      <div class="w-[90%] mx-auto mb-5 xl:w-[1024px]">
+        <!-- mobile -->
+        <div class="block md:hidden">
+          <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2 ">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, debitis quidem.
             Facere, et minus dolorem iste temporibus culpa obcaecati voluptate laudantium,
             consectetur quaerat esse. Nesciunt veniam aspernatur voluptas totam quae?
@@ -376,22 +388,67 @@ import PlayVideoIcon from '@/components/icons/PlayVideoIcon.vue'
             <p class="text-xs">24/02/2020</p>
           </div>
         </div>
+
+        <!-- desktop -->
         <div class="w-full mb-4">
-          <div class="flex justify-center items-center gap-2 relative">
-            <img src="../assets/img/post/imagenew3.png" alt="" class="w-[50%]" />
-            <div class="absolute bottom-2 left-2">
-              <HeartPostIcon class="w-6 h-6" />
+          <div class="relative grid md:grid-cols-12 gap-4 items-start">
+            <div class="md:col-span-5 lg:col-span-4 relative">
+              <img src="../assets/img/post/imagenew2.png" alt="" class=" md:grid-cols-5" />
+              <div class="absolute bottom-2 left-2">
+                <HeartPostIcon class="w-6 h-6" />
+              </div>
             </div>
-            <p class="line-clamp-4 text-sm/[21px] text-[#3B4144] font-normal">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate in eius
-              voluptas ea assumenda sequi, voluptatibus molestiae ad quod deserunt est delectus
-              nulla, ullam nostrum quis vero perferendis deleniti.
-            </p>
+
+            <!--  -->
+            <div class="md:col-span-7 lg:col-span-8 ml-2">
+              <div class="hidden md:block">
+                <h2 class="line-clamp-2 text-lg/[21px] font-bold text-[#3B4144] mt-2 lg:text-lg/[27px]">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, debitis quidem.
+                  Facere, et minus dolorem iste temporibus culpa obcaecati voluptate laudantium,
+                  consectetur quaerat esse. Nesciunt veniam aspernatur voluptas totam quae?
+                </h2>
+
+                <div class="flex items-center gap-2 my-1">
+                  <h3 class="text-sm/[27px] font-semibold text-[#007882]">Xã hội</h3>
+                  <svg
+                    width="3"
+                    height="4"
+                    viewBox="0 0 3 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="1.5" cy="1.56641" r="1.5" fill="#3B4144" />
+                  </svg>
+                  <p class="text-xs">Quang Anh Trần</p>
+                  <svg
+                    width="3"
+                    height="4"
+                    viewBox="0 0 3 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="1.5" cy="1.56641" r="1.5" fill="#3B4144" />
+                  </svg>
+                  <p class="text-xs">24/02/2020</p>
+                </div>
+              </div>
+              <div>
+                <p class="line-clamp-4 text-sm/[21px] text-[#3B4144] font-normal lg:text-base/[28px]">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate in eius
+                  voluptas ea assumenda sequi, voluptatibus molestiae ad quod deserunt est delectus
+                  nulla, ullam nostrum quis vero perferendis deleniti.
+                </p>
+              </div>
+
+            </div>
+            
           </div>
         </div>
       </div>
-      <div class="w-[90%] mx-auto mb-5">
-        <div>
+      <!-- new 3 -->
+      <div class="w-[90%] mx-auto mb-5 xl:w-[1024px]">
+        <!-- mobile -->
+        <div class="block md:hidden">
           <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, debitis quidem.
             Facere, et minus dolorem iste temporibus culpa obcaecati voluptate laudantium,
@@ -421,22 +478,67 @@ import PlayVideoIcon from '@/components/icons/PlayVideoIcon.vue'
             <p class="text-xs">24/02/2020</p>
           </div>
         </div>
+
+        <!-- desktop -->
         <div class="w-full mb-4">
-          <div class="flex justify-center items-center gap-2 relative">
-            <img src="../assets/img/post/imagenew1.png" alt="" class="w-[50%]" />
-            <div class="absolute bottom-2 left-2">
-              <HeartPostIcon class="w-6 h-6" />
+          <div class="relative grid md:grid-cols-12 gap-4 items-start">
+            <div class="md:col-span-5 relative lg:col-span-4">
+              <img src="../assets/img/post/imagenew3.png" alt="" class=" md:grid-cols-5" />
+              <div class="absolute bottom-2 left-2">
+                <HeartPostIcon class="w-6 h-6" />
+              </div>
             </div>
-            <p class="line-clamp-4 text-sm/[21px] text-[#3B4144] font-normal">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate in eius
-              voluptas ea assumenda sequi, voluptatibus molestiae ad quod deserunt est delectus
-              nulla, ullam nostrum quis vero perferendis deleniti.
-            </p>
+
+            <!--  -->
+            <div class="md:col-span-7 lg:col-span-8 ml-2">
+              <div class="hidden md:block">
+                <h2 class="line-clamp-2 text-lg/[21px] font-bold text-[#3B4144] mt-2 lg:text-lg/[27px]">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, debitis quidem.
+                  Facere, et minus dolorem iste temporibus culpa obcaecati voluptate laudantium,
+                  consectetur quaerat esse. Nesciunt veniam aspernatur voluptas totam quae?
+                </h2>
+
+                <div class="flex items-center gap-2 my-1">
+                  <h3 class="text-sm/[27px] font-semibold text-[#007882]">Xã hội</h3>
+                  <svg
+                    width="3"
+                    height="4"
+                    viewBox="0 0 3 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="1.5" cy="1.56641" r="1.5" fill="#3B4144" />
+                  </svg>
+                  <p class="text-xs">Quang Anh Trần</p>
+                  <svg
+                    width="3"
+                    height="4"
+                    viewBox="0 0 3 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="1.5" cy="1.56641" r="1.5" fill="#3B4144" />
+                  </svg>
+                  <p class="text-xs">24/02/2020</p>
+                </div>
+              </div>
+              <div>
+                <p class="line-clamp-4 text-sm/[21px] text-[#3B4144] font-normal lg:text-base/[28px]">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate in eius
+                  voluptas ea assumenda sequi, voluptatibus molestiae ad quod deserunt est delectus
+                  nulla, ullam nostrum quis vero perferendis deleniti.
+                </p>
+              </div>
+
+            </div>
+            
           </div>
         </div>
       </div>
-      <div class="w-[90%] mx-auto mb-5">
-        <div>
+      <!-- new 4 -->
+      <div class="w-[90%] mx-auto mb-5 xl:w-[1024px]">
+        <!-- mobile -->
+        <div class="block md:hidden">
           <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, debitis quidem.
             Facere, et minus dolorem iste temporibus culpa obcaecati voluptate laudantium,
@@ -466,17 +568,60 @@ import PlayVideoIcon from '@/components/icons/PlayVideoIcon.vue'
             <p class="text-xs">24/02/2020</p>
           </div>
         </div>
+
+        <!-- desktop -->
         <div class="w-full mb-4">
-          <div class="flex justify-center items-center gap-2 relative">
-            <img src="../assets/img/post/imagenew4.png" alt="" class="w-[50%]" />
-            <div class="absolute bottom-2 left-2">
-              <HeartPostIcon class="w-6 h-6" />
+          <div class="relative grid md:grid-cols-12  gap-4 items-start">
+            <div class="md:col-span-5 lg:col-span-4 relative">
+              <img src="../assets/img/post/imagenew4.png" alt="" class=" md:grid-cols-5" />
+              <div class="absolute bottom-2 left-2">
+                <HeartPostIcon class="w-6 h-6" />
+              </div>
             </div>
-            <p class="line-clamp-4 text-sm/[21px] text-[#3B4144] font-normal">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate in eius
-              voluptas ea assumenda sequi, voluptatibus molestiae ad quod deserunt est delectus
-              nulla, ullam nostrum quis vero perferendis deleniti.
-            </p>
+
+            <!--  -->
+            <div class="md:col-span-7 lg:col-span-8 ml-2">
+              <div class="hidden md:block">
+                <h2 class="line-clamp-2 text-lg/[21px] font-bold text-[#3B4144] mt-2 lg:text-lg/[27px]">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, debitis quidem.
+                  Facere, et minus dolorem iste temporibus culpa obcaecati voluptate laudantium,
+                  consectetur quaerat esse. Nesciunt veniam aspernatur voluptas totam quae?
+                </h2>
+
+                <div class="flex items-center gap-2 my-1">
+                  <h3 class="text-sm/[27px] font-semibold text-[#007882]">Xã hội</h3>
+                  <svg
+                    width="3"
+                    height="4"
+                    viewBox="0 0 3 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="1.5" cy="1.56641" r="1.5" fill="#3B4144" />
+                  </svg>
+                  <p class="text-xs">Quang Anh Trần</p>
+                  <svg
+                    width="3"
+                    height="4"
+                    viewBox="0 0 3 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="1.5" cy="1.56641" r="1.5" fill="#3B4144" />
+                  </svg>
+                  <p class="text-xs">24/02/2020</p>
+                </div>
+              </div>
+              <div>
+                <p class="line-clamp-4 text-sm/[21px] text-[#3B4144] font-normal lg:text-base/[28px]">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate in eius
+                  voluptas ea assumenda sequi, voluptatibus molestiae ad quod deserunt est delectus
+                  nulla, ullam nostrum quis vero perferendis deleniti.
+                </p>
+              </div>
+
+            </div>
+            
           </div>
         </div>
       </div>

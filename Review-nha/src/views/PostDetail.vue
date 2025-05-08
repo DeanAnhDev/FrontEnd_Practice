@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[90%] mx-auto">
+  <div class="w-[90%] mx-auto ">
     <section>
       <div class="flex justify-between items-center mb-4">
         <div class="flex items-center gap-2">
