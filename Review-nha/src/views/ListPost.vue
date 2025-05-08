@@ -33,7 +33,8 @@ import PlayVideoIcon from '@/components/icons/PlayVideoIcon.vue'
       </div>
       <div class="grid gap-6 lg:grid-cols-12">
         <div class="relative w-full mb-4 col-span-12 lg:col-span-8 lg:col-start-1">
-          <img
+          <router-link to="/postdetail">
+            <img
             src="../assets/img/post/imagep1.png"
             alt=""
             class="w-full h-auto rounded-md object-cover"
@@ -60,6 +61,8 @@ import PlayVideoIcon from '@/components/icons/PlayVideoIcon.vue'
               nulla, ullam nostrum quis vero perferendis deleniti.
             </p>
           </div>
+          </router-link>
+          
         </div>
 
         <div class="col-span-12 lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">

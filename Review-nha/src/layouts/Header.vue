@@ -14,9 +14,9 @@
       </div>
      
 
-      <h1 class="text-primary-black font-header-custom font-semibold text-base xl:hidden">ReviewNhà</h1>
+      <h1 class="text-primary-black font-header-custom font-semibold text-lg xl:hidden">ReviewNhà</h1>
     </div>
-    <h1 class="text-primary-black font-header-custom font-semibold text-base hidden xl:block">ReviewNhà</h1>
+    <h1 class="text-primary-black font-header-custom font-semibold text-lg hidden xl:block">ReviewNhà</h1>
     <div class="flex items-center space-x-4">
       <NotificationIcon class="xl:hidden" />
       <HeartIcon />

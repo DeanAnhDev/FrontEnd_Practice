@@ -18,7 +18,9 @@
               stroke-linejoin="round"
             />
           </svg>
-          <span class="text-sm text-[#D93C23] font-semibold">Quay lại</span>
+          <router-link to="/">
+            <span class="text-sm text-[#D93C23] font-semibold">Quay lại</span>
+          </router-link>
         </div>
         <div class="flex items-center gap-2">
           <span class="hidden md:block text-sm/[21px] font-semibold text-[#3B4144]">
