@@ -2,7 +2,9 @@
   <div class="w-[90%] mx-auto ">
     <section class="xl:w-[1024px] mx-auto ">
       <div class="flex justify-between items-center mb-4">
+        <router-link to="/">
         <div class="flex items-center gap-2">
+          
           <svg
             width="16"
             height="17"
@@ -18,16 +20,17 @@
               stroke-linejoin="round"
             />
           </svg>
-          <router-link to="/">
+       
             <span class="text-sm text-[#D93C23] font-semibold">Quay lại</span>
-          </router-link>
+          
         </div>
+      </router-link>
         <div class="flex items-center gap-2">
           <span class="hidden md:block text-sm/[21px] font-semibold text-[#3B4144]">
             Chuyên mục:
           </span>
           <div
-            class="text-sm/[21px] font-semibold shrink-0 px-8 py-1 border border-2 border-[#007882] rounded-full text-[#fff] bg-[#007882]"
+            class="text-sm/[21px] font-semibold shrink-0 px-8 py-1 border border-2 border-[#007882] rounded-full text-[#fff] bg-[#007882] cursor-pointer"
           >
             Xã hội
           </div>
@@ -40,7 +43,7 @@
 
       <div class="md:flex justify-between items-center gap-2 my-4">
         <div class="flex items-center gap-2 my-4">
-          <h3 class="text-sm/[20px] sm:text-base/[27px] font-semibold text-[#007882]">Xã hội</h3>
+          <h3 class="text-sm/[20px] sm:text-base/[27px] font-semibold text-[#007882] cursor-pointer">Xã hội</h3>
           <svg
             width="3"
             height="4"
@@ -63,15 +66,15 @@
           <p class="text-xs sm:text-base/[27px]">24/02/2020</p>
         </div>
         <div class="flex items-center gap-2 my-4">
-          <button class="border boder-[#CCCCCC] bg-[#CCCCCC] px-10 lg:py-1 rounded-full  md:px-4 flex items-center gap-2">
+          <button class="border boder-[#CCCCCC] bg-[#CCCCCC] px-10 lg:py-1 rounded-full  md:px-4 flex items-center gap-2 cursor-pointer">
             <EmailIcon class="w-6 h-6" />
             <span class="text-[#fff] hidden lg:block">Gửi mail</span>
           </button>
-          <button class="border boder-[#CCCCCC] bg-[#395185] px-10 lg:py-1  rounded-full md:px-4 flex items-center gap-2" >
+          <button class="border boder-[#CCCCCC] bg-[#395185] px-10 lg:py-1  rounded-full md:px-4 flex items-center gap-2 cursor-pointer" >
             <FacebookIcon class="w-6 h-6" />
             <span class="hidden text-[#fff] lg:block">Chia sẻ</span>
           </button>
-          <button class="border boder-[#CCCCCC] px-10 rounded-full lg:py-1  md:px-4 flex items-center gap-2">
+          <button class="border boder-[#CCCCCC] px-10 rounded-full lg:py-1  md:px-4 flex items-center gap-2 cursor-pointer">
             <HeartIcon class="w-6 h-6" />
             <span class="hidden text-[#000] lg:block">Lưu</span>
           </button>
@@ -160,17 +163,17 @@
         <div class="flex items-center gap-2">
           <h2 class="text-sm/[21px] font-semibold text-[#3B4144] mr-2">Tin cùng chuyên mục</h2>
           <div
-            class="text-sm/[21px] font-semibold px-8 py-1 border border-2 border-[#007882] rounded-full text-[#fff] bg-[#007882]"
+            class="text-sm/[21px] font-semibold px-8 py-1 border border-2 border-[#007882] cursor-pointer rounded-full text-[#fff] bg-[#007882]"
           >
             Xã hội
           </div>
         </div>
         <div>
             <ArrowIcon class="md:hidden"/>
-            <span class="hidden md:block text-sm/[21px] font-semibold text-[#3B4144] ">Xem tất cả</span>
+            <span class="hidden md:block text-sm/[21px] font-semibold text-[#3B4144] cursor-pointer">Xem tất cả</span>
         </div>
       </div>
-      <div class=" mx-auto mb-5 xl:w-[1024px]">
+      <div class=" mx-auto mb-5 xl:w-[1024px] cursor-pointer">
         <!-- mobile -->
         <div class="block md:hidden">
           <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2">
@@ -209,7 +212,7 @@
             <div class="md:col-span-5 lg:col-span-4 relative">
               <img src="../assets/img/post-detail/image5.png" alt="" class=" md:grid-cols-5" />
               <div class="absolute bottom-2 left-2">
-                <HeartPostIcon class="w-6 h-6" />
+          
               </div>
             </div>
 
@@ -260,7 +263,7 @@
         </div>
       </div>
       <!-- new 2 -->
-      <div class=" mx-auto mb-5 xl:w-[1024px]">
+      <div class=" mx-auto mb-5 xl:w-[1024px] cursor-pointer">
         <!-- mobile -->
         <div class="block md:hidden">
           <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2 ">
@@ -299,7 +302,7 @@
             <div class="md:col-span-5 lg:col-span-4 relative">
               <img src="../assets/img/post-detail/image6.png" alt="" class=" md:grid-cols-5" />
               <div class="absolute bottom-2 left-2">
-                <HeartPostIcon class="w-6 h-6" />
+                
               </div>
             </div>
 
@@ -356,10 +359,10 @@
         </div>
         <div>
             <ArrowIcon class="md:hidden"/>
-            <span class="hidden md:block text-sm/[21px] font-semibold text-[#3B4144] ">Xem tất cả</span>
+            <span class="hidden md:block text-sm/[21px] font-semibold text-[#3B4144] cursor-pointer">Xem tất cả</span>
         </div>
       </div>
-      <div class=" mx-auto mb-5 xl:w-[1024px]">
+      <div class=" mx-auto mb-5 xl:w-[1024px] cursor-pointer">
         <!-- mobile -->
         <div class="block md:hidden">
           <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2">
@@ -398,7 +401,7 @@
             <div class="md:col-span-5 lg:col-span-4 relative">
               <img src="../assets/img/post-detail/image7.png" alt="" class=" md:grid-cols-5" />
               <div class="absolute bottom-2 left-2">
-                <HeartPostIcon class="w-6 h-6" />
+               
               </div>
             </div>
 
@@ -449,7 +452,7 @@
         </div>
       </div>
       <!-- new 2 -->
-      <div class=" mx-auto mb-5 xl:w-[1024px]">
+      <div class=" mx-auto mb-5 xl:w-[1024px] cursor-pointer">
         <!-- mobile -->
         <div class="block md:hidden">
           <h2 class="line-clamp-2 text-sm/[21px] font-bold text-[#3B4144] mt-2 ">
@@ -487,8 +490,7 @@
           <div class="relative grid md:grid-cols-12 gap-4 items-start">
             <div class="md:col-span-5 lg:col-span-4 relative">
               <img src="../assets/img/post-detail/image8.png" alt="" class=" md:grid-cols-5" />
-              <div class="absolute bottom-2 left-2">
-                <HeartPostIcon class="w-6 h-6" />
+                <div class="absolute bottom-2 left-2">
               </div>
             </div>
 
